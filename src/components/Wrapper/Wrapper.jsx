@@ -5,7 +5,7 @@ import { HiMiniBars3BottomRight } from "react-icons/hi2";
 import { MdClose } from "react-icons/md";
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 
-
+import logo from '../../assets/Delgo-01.jpg'
 import { alpha, styled } from '@mui/material/styles';
 import { pink } from '@mui/material/colors';
 import Switch from '@mui/material/Switch';
@@ -61,7 +61,7 @@ const {t} = useTranslation();
           
       
           <RouterLink to="/">
-            <img src="https://courier.uzumtezkor.uz/img/logo.svg" alt="Logo" className="w-[130px]" />
+            <img src={logo} alt="Logo" className="w-[150px] " />
           </RouterLink>
 
        

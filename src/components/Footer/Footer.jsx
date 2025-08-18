@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import img from '../../assets/Delgo-01.jpg'
 import './Footer.css'
 function Footer() {
   return (
@@ -10,7 +11,7 @@ function Footer() {
           <div className="Footer__logo mb-6">
             <img data-aos='zoom-in'
               className="mx-auto w-[150px] sm:w-[180px] md:w-[200px]"
-              src="https://courier.uzumtezkor.uz/img/logo.svg"
+              src={img}
               alt="Uzum Tezkor logo"
             />
           </div>
