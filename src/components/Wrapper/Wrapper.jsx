@@ -30,7 +30,7 @@ const PinkSwitch = styled(Switch)(({ theme }) => ({
 function Wrapper() {
    useEffect(() => {
     AOS.init({
-      duration: 1000, // animatsiya davomiyligi (ms)
+      duration: 1000, 
     });
   }, []);
 
@@ -99,9 +99,9 @@ const {t} = useTranslation();
       
           <div className='md:hidden flex items-center'>
             {toggleControl ? (
-              <MdClose onClick={() => setToggleControl(false)} size={33} className='cursor-pointer text-[#6d4aa5]' />
+              <MdClose onClick={() => setToggleControl(false)} size={33} className='cursor-pointer text-[#6d4aa5] dark:text-white' />
             ) : (
-              <HiMiniBars3BottomRight onClick={() => setToggleControl(true)} size={30} className='cursor-pointer text-[#6d4aa5]' />
+              <HiMiniBars3BottomRight onClick={() => setToggleControl(true)} size={30} className='cursor-pointer text-[#6d4aa5] dark:text-white' />
             )}
           </div>
         </nav>
