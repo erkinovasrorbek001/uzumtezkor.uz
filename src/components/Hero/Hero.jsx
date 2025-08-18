@@ -14,8 +14,6 @@ function Hero() {
                                {t("Doimiy ish faoliyati.")}
                             </h1>
                             <p className='Hero__text text-[20px] ml-6'>{t("Har kuni ishlashingiz mumkin.")}</p>
-
-                            <div className='Hero_text w-[200px] h-[200px] bg-gray-500 rounded-[30px]  absolute top-[92%] left-[50%] transform -translate-x-1/2 -translate-y-1/2 z-10'></div>
                         </li>
                         <li data-aos='zoom-in-right' className='Hero__item  dark:bg-[#282845] text-black dark:text-white px-5 py-10 w-[500px] mx-auto rounded-[30px] bg-gray-300 '>
                             <h1 className='Hero_title text-[40px] text-wrap ml-7 font-medium '>{t("Barqaror va yuqori daromad.")}</h1>
@@ -37,8 +35,6 @@ function Hero() {
                                 {t("Har qanday transport")}
                             </h1>
                             <p className='Hero__text text-[25px] ml-5'>{t("Buyurtmalarni velosipedda, mashinada, skuterda yoki samokatda yetkazishingiz mumkin.")}</p>
-
-                            <div className='Hero_text w-[200px] h-[200px] bg-gray-500 rounded-[30px]  absolute top-[92%] left-[50%] transform -translate-x-1/2 -translate-y-1/2 z-10'></div>
                         </li>
                     </ul>
                 </nav>
