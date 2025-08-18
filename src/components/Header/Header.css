@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Mozilla+Headline:wght@200..700&family=Noto+Sans+JP:wght@100..900&family=Unbounded:wght@100.400.900&display=swap');
+.Header__title{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.Header__button {
+    position: relative;
+    overflow: hidden;
+    color: #fff; 
+    cursor: pointer;
+    z-index: 1;
+    background-color: #6d4aa5; 
+    border: none;
+    display: inline-block;
+    border: 1px solid #6d4aa5;
+    transition: color 1s; 
+}
+        .Header__button::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    clip-path: circle(0% at 50% 50%);
+    transition: clip-path 1.80s;
+    z-index: -1;
+    background-color: #fff; 
+}
+
+.Header__button:hover::before {
+    clip-path: circle(150% at 50% 50%);
+    }
+    
+.Header__button:hover {
+    color: #6d4aa5;
+    border: 1px solid #6d4aa5; 
+    }
+    

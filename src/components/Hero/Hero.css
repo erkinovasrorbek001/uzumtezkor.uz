@@ -1,0 +1,17 @@
+.Hero__list{
+    z-index: -10;
+    position: relative;
+}
+.Hero_text{
+    z-index: 10;
+    position: absolute;
+}
+.Hero_text{
+    height:  calc(100% - 80%);
+    background: gray;
+    z-index: -10;
+    width: 100%;
+}
+.Hero__title{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}

@@ -1,0 +1,78 @@
+
+.Section_button {
+    position: relative;
+    overflow: hidden;
+    color: #7000FF; 
+    cursor: pointer;
+    z-index: 1;
+    background-color: #fff; 
+    border: none;
+    display: inline-block;
+    border: 1px solid #7000FF;
+    transition: color 1s; 
+}
+
+.Section_button::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    clip-path: circle(0% at 50% 50%);
+    transition: clip-path 1.80s;
+    z-index: -1;
+    background-color: #7000FF; 
+}
+
+.Section_button:hover::before {
+    clip-path: circle(150% at 50% 50%);
+}
+.Section__title{
+    font-family:'Times New Roman', Times, serif;
+}
+.Section_button:hover {
+    color: #fff;
+    border: 1px solid #fff; 
+}
+
+.Section__button {
+    position: relative;
+    overflow: hidden;
+    color: #fff; 
+    cursor: pointer;
+    z-index: 1;
+    background-color: #7000FF; 
+    border: none;
+    display: inline-block;
+   
+    transition: color 1s; 
+}
+
+.Section__button::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    clip-path: circle(0% at 50% 50%);
+    transition: clip-path 1.80s;
+    z-index: -1;
+    background-color: #fff; 
+}
+
+.Section__button:hover::before {
+    clip-path: circle(150% at 50% 50%);
+}
+
+.Section__button:hover {
+    color: #6d4aa5;
+  
+}
+.Section__number{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold';
+    
+}
+.Section_title{
+    
+    font-family:'Times New Roman', Times, serif;
+}
+
+.Section_title{
+    font-family:'Times New Roman', Times, serif;
+}

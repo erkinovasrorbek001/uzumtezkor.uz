@@ -1,0 +1,30 @@
+.Footer__button {
+    position: relative;
+    overflow: hidden;
+    color: #fff; 
+    cursor: pointer;
+    z-index: 1;
+    background-color: #6d4aa5; 
+    border: none;
+    display: inline-block;
+    border: 1px solid #6d4aa5;
+    transition: color 1s; 
+}
+        .Footer__button::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    clip-path: circle(0% at 50% 50%);
+    transition: clip-path 1.80s;
+    z-index: -1;
+    background-color: #fff; 
+}
+
+.Footer__button:hover::before {
+    clip-path: circle(150% at 50% 50%);
+    }
+    
+.Footer__button:hover {
+    color: #6d4aa5;
+    border: 1px solid #6d4aa5; 
+    }
