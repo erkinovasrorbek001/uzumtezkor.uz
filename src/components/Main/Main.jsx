@@ -4,36 +4,36 @@ import { useTranslation } from 'react-i18next'
 function Main() {
   const [t] = useTranslation()
   return (
-    <div data-aos='zoom-in' className="Main bg-white dark:bg-[#1a1a2e] duration-500">
+    <div  className="Main bg-white dark:bg-[#2d328e] duration-500">
       <div className="Main__container">
         <nav className="Main__nav">
-          <div className="max-w-[1200px] mx-auto flex flex-wrap gap-3 sm:gap-4 md:gap-6 py-6 px-4 justify-left">
+          <div  className="max-w-[1200px] mx-auto flex flex-wrap gap-3 sm:gap-4 md:gap-6 py-6 px-4 justify-left">
             {[
-              t("Kuryerlik O’zbekiston Uzum Tezkor"),
-              t("Kurerlik O’zbekiston Uzum Tezkor"),
-              t("Kuryerlik Toshkent Uzum Tezkor"),
-              t("Kurerlik Toshkent Uzum Tezkor"),
-              t("kuryer toshken Uzum Tezkor"),
-              t("kurer toshken Uzum Tezkor"),
-              t("Kuryerlik Samarqand Uzum Tezkor"),
-              t("Kurerlik Samarqand Uzum Tezkor"),
-              t("Kuryerlik Farg’ona Uzum Tezkor"),
-              t("Kurerlik Fargona Uzum Tezkor"),
-              t("Buxoro kuryerlik Uzum Tezkor"),
-              t("Buxoro kurerli Uzum Tezkor"),
-              t("Andijon kuryer Uzum Tezkor"),
-              t("Andijon kurer Uzum Tezkor"),
-              t("Navoi kuryer Uzum Tezkor"),
-              t("Navoi kurer Uzum Tezkor"),
-              t("Navoida kurerlik Uzum Tezkor"),
-              t("Navoida kuryerlik Uzum Tezkor"),
-              t("Navoida kurerlik Uzum Tezkor"),
-              t("Namanganda kuryerlik Uzum Tezkor"),
-              t("Namanganda kurerlik Uzum Tezkor"),
+              t("Kuryerlik O’zbekiston Delgo.uz"),
+              t("Kurerlik O’zbekiston Delgo.uz"),
+              t("Kuryerlik Toshkent Delgo.uz"),
+              t("Kurerlik Toshkent Delgo.uz"),
+              t("kuryer toshken Delgo.uz"),
+              t("kurer toshken Delgo.uz"),
+              t("Kuryerlik Samarqand Delgo.uz"),
+              t("Kurerlik Samarqand Delgo.uz"),
+              t("Kuryerlik Farg’ona Delgo.uz"),
+              t("Kurerlik Fargona Delgo.uz"),
+              t("Buxoro kuryerlik Delgo.uz"),
+              t("Buxoro kurerli Delgo.uz"),
+              t("Andijon kuryer Delgo.uz"),
+              t("Andijon kurer Delgo.uz"),
+              t("Navoi kuryer Delgo.uz"),
+              t("Navoi kurer Delgo.uz"),
+              t("Navoida kurerlik Delgo.uz"),
+              t("Navoida kuryerlik Delgo.uz"),
+              t("Navoida kurerlik Delgo.uz"),
+              t("Namanganda kuryerlik Delgo.uz"),
+              t("Namanganda kurerlik Delgo.uz"),
             ].map((text, index) => (
-              <p
+              <p data-aos='zoom-in'
                 key={index}
-                className="bg-[#7000FF] dark:bg-white dark:text-[#7000FF]  text-white px-4 py-2 rounded-full text-xs sm:text-sm font-medium whitespace-nowrap shadow-md transition-all duration-300 hover:scale-105"
+                className="bg-[#2d328e] dark:bg-white dark:text-[#2d328e]  text-white px-4 py-2 rounded-full text-xs sm:text-sm font-medium whitespace-nowrap shadow-md  duration-1000 hover:scale-105"
               >
                 {text}
               </p>

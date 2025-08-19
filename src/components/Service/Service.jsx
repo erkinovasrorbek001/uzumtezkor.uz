@@ -3,7 +3,7 @@ import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
-import { GoPlus } from "react-icons/go";
+import { RiArrowDownSLine } from "react-icons/ri";
 import { useTranslation } from 'react-i18next';
 
 function Service() {
@@ -44,7 +44,7 @@ function Service() {
   ];
 
   return (
-    <div id='faq' className="Service  bg-white dark:bg-[#1a1a2e] duration-500 py-10 px-4">
+    <div id='faq' className="Service  bg-white dark:bg-[#2d328e] duration-500 py-10 px-4">
       <div className="Service__container max-w-[1200px] mx-auto">
         <nav className="Service__nav flex flex-col items-center">
           <h1 data-aos='zoom-in-right' className="Service__title text-3xl sm:text-4xl md:text-5xl font-bold dark:text-white text-black mb-8">
@@ -54,11 +54,11 @@ function Service() {
             {faqData.map((item, index) => (
               <li data-aos='zoom-in'
                 key={index}
-                className="Service__item w-full sm:w-[90%] md:w-[80%] lg:w-[70%]"
+                className="Service__item w-full rounded-2xl sm:w-[90%] md:w-[80%] lg:w-[70%]"
               >
-                <Accordion className="dark:bg-white bg-[#1a1a2e] dark:text-black text-white rounded-md shadow-md">
+                <Accordion className="dark:bg-white bg-[#1a1a2e] dark:text-[#2d328e] text-white  shadow-md">
                   <AccordionSummary
-                    expandIcon={<GoPlus className="text-xl" />}
+                    expandIcon={<RiArrowDownSLine className="text-xl" />}
                     aria-controls={`panel-${index}-content`}
                     id={`panel-${index}-header`}
                   >

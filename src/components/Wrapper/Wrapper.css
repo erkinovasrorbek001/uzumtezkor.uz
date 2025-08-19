@@ -2,14 +2,11 @@
 .Wrapper__button {
     position: relative;
     overflow: hidden;
-    color: #fff; 
     cursor: pointer;
     z-index: 1;
-    background-color: #6d4aa5; 
     border: none;
     display: inline-block;
     padding: 10px 20px;
-    border: 1px solid #6d4aa5;
     transition: color 1s; 
 }
 .Wrapper{
@@ -23,17 +20,13 @@
     clip-path: circle(0% at 50% 50%);
     transition: clip-path 1.50s;
     z-index: -1;
-    background-color: #fff; 
+   
 }
 
 .Wrapper__button:hover::before {
     clip-path: circle(150% at 50% 50%);
 }
 
-.Wrapper__button:hover {
-    color: #6d4aa5;
-    border: 1px solid #6d4aa5; 
-}
 
 .Wrapper__item {
     font-weight: 400;
@@ -45,7 +38,6 @@
     font-weight: 400;
     font-family: Arial, Helvetica, "Times New Roman", Times, serif;
     cursor: pointer;
-   
     text-decoration: none;
 }
 
@@ -56,7 +48,7 @@
     bottom: 0;
     width: 0;
     height: 2px;
-    background-color: #6d4aa5;
+    background-color: #2d328e;
     transform: translateX(-50%);
     transition: width 0.75s ease;
 }
@@ -65,7 +57,7 @@
     width: 100%;
 }
 .Wrapper__item:hover{
-    color: #6d4aa5;
+    color: #2d328e;
 }
 @media (max-width:1000px) {
     .Wrapper__item:nth-child(3){

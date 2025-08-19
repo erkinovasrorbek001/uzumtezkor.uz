@@ -1,14 +1,13 @@
 
 .Section_button {
     position: relative;
-    overflow: hidden;
-    color: #7000FF; 
+
     cursor: pointer;
     z-index: 1;
-    background-color: #fff; 
+   
     border: none;
     display: inline-block;
-    border: 1px solid #7000FF;
+  
     transition: color 1s; 
 }
 
@@ -19,7 +18,7 @@
     clip-path: circle(0% at 50% 50%);
     transition: clip-path 1.80s;
     z-index: -1;
-    background-color: #7000FF; 
+    background-color: #2d328e; 
 }
 
 .Section_button:hover::before {
@@ -28,18 +27,15 @@
 .Section__title{
     font-family:'Times New Roman', Times, serif;
 }
-.Section_button:hover {
-    color: #fff;
-    border: 1px solid #fff; 
-}
+
 
 .Section__button {
     position: relative;
     overflow: hidden;
-    color: #fff; 
+
     cursor: pointer;
     z-index: 1;
-    background-color: #7000FF; 
+  
     border: none;
     display: inline-block;
    
@@ -53,7 +49,7 @@
     clip-path: circle(0% at 50% 50%);
     transition: clip-path 1.80s;
     z-index: -1;
-    background-color: #fff; 
+  
 }
 
 .Section__button:hover::before {
@@ -61,7 +57,7 @@
 }
 
 .Section__button:hover {
-    color: #6d4aa5;
+    color: #2d328e;
   
 }
 .Section__number{

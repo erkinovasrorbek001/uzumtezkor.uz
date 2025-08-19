@@ -3,7 +3,7 @@ import { createRoot } from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
 import App from './App';
 import './index.css';
-import './content/i18'; // ✅ i18n fayl nomini to'g'riladik (i18 emas)
+import './content/i18'; 
 
 const rootElement = document.getElementById('root');
 

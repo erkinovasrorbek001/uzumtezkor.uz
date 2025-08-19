@@ -4,7 +4,7 @@ import LanguageDetector from 'i18next-browser-languagedetector';
 import { initReactI18next } from 'react-i18next';
 import rustranslation from '../../public/translate/rus.json'
 import uzbtranslation from '../../public/translate/uzb.json'
-
+import engtranslation from '../../public/translate/eng.json'
 i18n
   .use(Backend)
   .use(LanguageDetector)
@@ -15,7 +15,8 @@ i18n
     lng:"uzb",
     resources:{
     uzb:{translation: uzbtranslation},
-    rus:{translation: rustranslation}
+    rus:{translation: rustranslation},
+    eng:{translation: engtranslation}
     },
     interpolation: {
       escapeValue: false, 

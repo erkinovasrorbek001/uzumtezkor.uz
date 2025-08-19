@@ -4,8 +4,8 @@ import { useTranslation } from 'react-i18next';
 function Person() {
   const [t] = useTranslation()
   return (
-    <div data-aos='zoom-in' className="pt-30 Person bg-white dark:bg-[#1a1a2e] py-10 px-4 min-h-screen flex items-center justify-center">
-      <div className="Person__container w-full max-w-[500px] bg-white dark:bg-gray-900 shadow-md rounded-xl p-6">
+    <div data-aos='zoom-in' className="pt-30 Person bg-white  dark:bg-[#2d328e] py-10 px-4 min-h-screen flex items-center justify-center">
+      <div className="Person__container w-full max-w-[500px] bg-white dark:bg-[#2d328e] shadow-md rounded-xl p-6">
        
         <div className="Person__logo flex justify-center mb-4">
           <img
@@ -33,7 +33,7 @@ function Person() {
             <input
               type="tel"
               placeholder="+998xxxxxxxxx"
-              className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-[#7000FF] dark:bg-gray-800 dark:text-white"
+              className="w-full px-4 py-2 bg-white   border-[#2d328e] text-[#2d328e] dark:border-gray-600 rounded-md focus:outline-none focus:ring-2  dark:bg-[#2d328e] dark:text-white"
               required
             />
             <p className="text-[12px] text-blue-600 mt-1">
@@ -48,7 +48,7 @@ function Person() {
             </label>
             <input
               type="text"
-              className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-[#7000FF] dark:bg-gray-800 dark:text-white"
+              className="w-full px-4 py-2 border border-gray-300 bg-white text-[#2d328e] dark:border-gray-600 rounded-md focus:outline-none focus:ring-2  dark:bg-[#2d328e] dark:text-white"
               required
             />
           </div>
@@ -60,7 +60,7 @@ function Person() {
             </label>
             <input
               type="date"
-              className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-[#7000FF] dark:bg-gray-800 dark:text-white"
+              className="w-full px-4 py-2 border border-gray-300 bg-[#fff] text-[#2d328e] dark:border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-[#7000FF] dark:bg-[#2d328e] dark:text-white"
               required
             />
           </div>
@@ -71,7 +71,7 @@ function Person() {
               {t("Buyurtmalarni qaysi transportda yetkazib berishga tayyorsiz?")}<span className="text-red-500">*</span>
             </label>
             <select
-              className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-md bg-white dark:bg-gray-800 dark:text-white focus:outline-none focus:ring-2 focus:ring-[#7000FF]"
+              className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-md bg-white dark:bg-[#2d328e] dark:text-white focus:outline-none focus:ring-2 focus:ring-[#7000FF]"
               required
             >
               <option value="">Select...</option>
@@ -87,7 +87,7 @@ function Person() {
               {t("Qaysi shaharda ishlamoqchi bo‘lganingizni tanlang")}<span className="text-red-500">*</span>
             </label>
             <select
-              className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-md bg-white dark:bg-gray-800 dark:text-white focus:outline-none focus:ring-2 focus:ring-[#7000FF]"
+              className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-md bg-white dark:bg-[#2d328e] dark:text-white focus:outline-none focus:ring-2 focus:ring-[#7000FF]"
               required
             >
               <option value="">Select...</option>
@@ -102,12 +102,10 @@ function Person() {
           </div>
 
         
-          <button
-            type="submit"
-            className=" Footer__button mt-4 w-full bg-[#7000FF] text-white py-2 rounded-full font-semibold hover:bg-[#5a00cc] transition-all"
-          >
-            {t("Yuborish")}
-          </button>
+         <button type='Submit' className="relative overflow-hidden px-6 py-3 font-bold rounded-full border-2 border-[#2d328e] dark:border-white bg-white dark:bg-[#2d328e] text-[#2d328e] dark:text-white hover:bg-[#2d328e] dark:hover:bg-white hover:text-white dark:hover:text-[#2d328e] transition-all duration-500 group">
+                <span className="relative z-10">{t("Yuborish")}</span>
+                <span className="absolute inset-0 bg-[#2d328e] dark:bg-white rounded-full scale-0 group-hover:scale-100 transition-transform duration-500 origin-center z-0"></span>
+              </button>
         </form>
       </div>
     </div>

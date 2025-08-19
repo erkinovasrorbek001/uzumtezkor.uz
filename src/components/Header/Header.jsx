@@ -9,7 +9,7 @@ function Header() {
   const [t]= useTranslation();
   
   return (
-    <div className='Header bg-white dark:bg-[#1a1a2e] py-20 duration-1000'>
+    <div className='Header bg-white dark:bg-[#2d328e] py-20 duration-1000'>
       <div className='Header__container max-w-[1200px] mx-auto px-4'>
 
        
@@ -18,15 +18,13 @@ function Header() {
           
           <div className='Header__left w-full lg:w-1/2 text-center lg:text-left' data-aos="zoom-in-right">
             <h1 className='Header__title text-[40px] sm:text-[50px] lg:text-[70px] text-[#413636] dark:text-white font-bold leading-tight'>
-              <span className='text-sky-500'>{t("Uzum Tezkor")}</span><br /> {t("bilan bugunoq kuryer bo'ling")}
+              <span className='text-[#2b2170]'>{t("Delgo")}</span><br /> {t("Hamisha birga bo'lamiz!")}
             </h1>
 
-            <button className='Header__button 
-              mt-6 px-6 py-4 sm:py-5 sm:px-10  text-[18px] sm:text-[22px] lg:text-[25px] 
-              font-bold rounded-[30px]  
-               transition duration-300 relative '>
-              {t("Ro'yxatdan o'tish")}
-            </button>
+           <button className="relative overflow-hidden px-20 py-7 text-[30px] font-bold rounded-full border-2 border-[#2d328e] dark:border-white bg-white dark:bg-[#2d328e] text-[#2d328e] dark:text-white hover:bg-[#2d328e] dark:hover:bg-white hover:text-white dark:hover:text-[#2d328e] transition-all duration-1000 group">
+  <span className="relative z-10">{t("Kuryer bo'lish")}</span>
+  <span className="absolute inset-0 bg-[#2d328e] dark:bg-white rounded-full scale-0 group-hover:scale-100 transition-transform duration-1000 origin-center z-0"></span>
+</button>
           </div>
 
        
@@ -38,18 +36,18 @@ function Header() {
         
         <div className='card flex mt-10 justify-left ' data-aos="zoom-in">
           <div className='Card__container 
-            bg-yellow-200 dark:bg-amber-300 
+            bg-[#fff] dark:bg-[#2d328e] 
             max-w-[400px] w-full px-6 sm:px-10 py-6 sm:py-8 rounded-[30px]
             text-center shadow-md'>
 
             <div className='Card__title' >
-              <h1 className='text-[30px] sm:text-[30px] font-bold text-[#2c2c2c]'>
+              <h1 className='text-[30px] sm:text-[30px] font-bold dark:text-white text-[#2c2c2c]'>
                 {t("Xush kelibsiz bonusi")}<br />
                 <span >1 000 000 so'mgacha</span>
               </h1>
               <p className='text-left ml-5'>**</p>
 
-              <p className='text-[20px] mt-2 font-sans text-[#4b4b4b]'>
+              <p className='text-[20px] mt-2 font-sans dark:text-white text-[#4b4b4b]'>
                 {t("Kuryer bo'ling va bonus oling!")}
               </p>
             </div>
