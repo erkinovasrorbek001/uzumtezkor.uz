@@ -55,7 +55,7 @@ function Section() {
   
   <div className='Section__right w-full lg:w-1/2 mb-6 lg:mb-0 order-1 lg:order-2 flex justify-center'>
     <img 
-      className='w-[300px] scale-x-200 scale-y-250 sm:w-[300px] md:w-[350px] lg:w-[400px]  lg:scale-100 -mt-2 lg:-mt-14 lg:-ml-8' 
+      className=' scale-x-200 scale-y-250 sm:w-[300px] max-md:hidden lg:w-[400px]  lg:scale-100 -mt-2 lg:-mt-14 lg:-ml-8' 
       src={imgone} 
       alt="Delivery illustration" 
     />

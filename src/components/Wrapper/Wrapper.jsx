@@ -106,7 +106,7 @@ function Wrapper() {
             <img src={logoSrc} alt="Logo" className="w-[150px]" />
           </RouterLink>
 
-          {/* Desktop menu */}
+     
           <ul className='hidden md:flex items-center gap-10 max-w-[600px] flex-shrink'>
             {['Afzal', 'ishlash', 'faq'].map((id, index) => (
               <li key={index} className='Wrapper__item text-[18px] font-semibold whitespace-nowrap'>
@@ -166,7 +166,7 @@ function Wrapper() {
               </Menu>
             </div>
 
-            {/* Language switch */}
+         
             <div className="relative group">
               <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none z-10">
                 <Globe className="h-4 w-4 text-gray-500 dark:text-gray-300" />
@@ -182,7 +182,7 @@ function Wrapper() {
               </select>
             </div>
 
-            {/* Contact button */}
+           
             <RouterLink to="/contact">
               <button className="relative overflow-hidden px-6 py-3 font-bold rounded-full border-2 border-[#12121f] dark:border-white bg-white dark:bg-[#12121f] text-[#12121f] dark:text-white hover:bg-[##12121f] dark:hover:bg-white hover:text-white dark:hover:text-[#12121f] transition-all duration-500 group whitespace-nowrap">
                 <span className="relative z-10">{t("Kuryer bo'lish")}</span>
@@ -191,7 +191,7 @@ function Wrapper() {
             </RouterLink>
           </div>
 
-          {/* Mobile menu toggle */}
+      
           <div className='md:hidden flex items-center'>
             {toggleControl ? (
               <MdClose onClick={() => setToggleControl(false)} size={33} className='cursor-pointer text-[#2d328e] dark:text-white' />
@@ -201,7 +201,7 @@ function Wrapper() {
           </div>
         </nav>
 
-        {/* Mobile menu */}
+    
         {toggleControl && (
           <div className='md:hidden bg-white dark:bg-[#2d328e] p-4 space-y-4 shadow-lg rounded-lg mt-2 border border-gray-200 dark:border-gray-600'>
             <ul className="space-y-3">
@@ -221,7 +221,7 @@ function Wrapper() {
               ))}
             </ul>
 
-            {/* Theme select mobile */}
+          
             <div className="py-3">
               <label htmlFor="theme-select-mobile" className="block mb-1 font-medium text-sm dark:text-white text-black">
                 Rejimni tanlang
@@ -238,7 +238,7 @@ function Wrapper() {
               </select>
             </div>
 
-            {/* Language switch mobile */}
+          
             <div className="relative group">
               <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none z-10">
                 <Globe className="h-4 w-4 text-gray-500 dark:text-gray-300" />
