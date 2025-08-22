@@ -5,6 +5,7 @@ import { initReactI18next } from 'react-i18next';
 import rustranslation from '../../public/translate/rus.json'
 import uzbtranslation from '../../public/translate/uzb.json'
 import engtranslation from '../../public/translate/eng.json'
+const lenguage = localStorage.getItem('i18nextLng')||'uzbtranslation'
 i18n
   .use(Backend)
   .use(LanguageDetector)
@@ -12,7 +13,7 @@ i18n
   .init({
     fallbackLng: 'uzb',
     debug: false,
-    lng:"uzb",
+    lng:lenguage,
     resources:{
     uzb:{translation: uzbtranslation},
     rus:{translation: rustranslation},

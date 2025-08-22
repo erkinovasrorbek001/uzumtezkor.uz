@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next'
 function Main() {
   const [t] = useTranslation()
   return (
-    <div  className="Main bg-white dark:bg-[#2d328e] duration-500">
+    <div  className="Main bg-white dark:bg-[#12121f] duration-500">
       <div className="Main__container">
         <nav className="Main__nav">
           <div  className="max-w-[1200px] mx-auto flex flex-wrap gap-3 sm:gap-4 md:gap-6 py-6 px-4 justify-left">

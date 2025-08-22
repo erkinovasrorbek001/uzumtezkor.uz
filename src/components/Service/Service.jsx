@@ -44,7 +44,7 @@ function Service() {
   ];
 
   return (
-    <div id='faq' className="Service  bg-white dark:bg-[#2d328e] duration-500 py-10 px-4">
+    <div id='faq' className="Service  bg-white dark:bg-[#12121f] duration-500 py-10 px-4">
       <div className="Service__container max-w-[1200px] mx-auto">
         <nav className="Service__nav flex flex-col items-center">
           <h1 data-aos='zoom-in-right' className="Service__title text-3xl sm:text-4xl md:text-5xl font-bold dark:text-white text-black mb-8">
@@ -56,7 +56,7 @@ function Service() {
                 key={index}
                 className="Service__item w-full rounded-2xl sm:w-[90%] md:w-[80%] lg:w-[70%]"
               >
-                <Accordion className="dark:bg-white bg-[#1a1a2e] dark:text-[#2d328e] text-white  shadow-md">
+                <Accordion className="dark:bg-white bg-[#1a1a2e] dark:text-[#12121f] text-white  shadow-md">
                   <AccordionSummary
                     expandIcon={<RiArrowDownSLine className="text-xl" />}
                     aria-controls={`panel-${index}-content`}

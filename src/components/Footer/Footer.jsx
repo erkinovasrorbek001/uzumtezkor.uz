@@ -30,7 +30,7 @@ function Footer() {
   }, []);
 
   return (
-    <div className="Footer bg-white dark:bg-[#2d328e] duration-1000 text-black dark:text-white py-10 px-4">
+    <div className="Footer bg-white dark:bg-[#12121f] duration-1000 text-black dark:text-white py-10 px-4">
       <div className="Footer__container max-w-[1200px] mx-auto">
         <nav className="Footer__nav flex flex-col items-center text-center">
          
@@ -45,11 +45,11 @@ function Footer() {
           <address className="text-center dark:text-white text-[16px] sm:text-[18px] md:text-[20px] text-gray-800">
             <h1 className="Footer__text mb-2">
               Tel:{" "}
-              <a className="text-[#7000FF] hover:text-[#5a00cc] dark:hover:text-[#8c42ff] transition-colors" href="tel:+998977030513">
+              <a className="text-[#2f3291] font-semibold hover:text-[#2f3291] dark:hover:text-[#2f3291] transition-colors" href="tel:+998977030513">
                 +998977030513
               </a>{" "}
               | Email:{" "}
-              <a className="text-[#7000FF] hover:text-[#5a00cc] dark:hover:text-[#8c42ff] transition-colors" href="mailto:windowsa786@gmail.com">
+              <a className="text-[#2f3291] font-semibold hover:text-[#2f3291] dark:hover:text-[#2f3291] transition-colors" href="mailto:windowsa786@gmail.com">
                 windowsa786@gmail.com
               </a>
             </h1>
@@ -59,7 +59,7 @@ function Footer() {
               IP MCHJ «Delgo»
             </p>
             <p className="Footer__write">
-              <Link className="text-[#7000FF] hover:text-[#5a00cc] dark:hover:text-[#8c42ff] transition-colors" to="/Shartnoma">
+              <Link className="text-[#2f3291] font-semibold hover:text-[#2f3291] dark:hover:text-[#2f3291] transition-colors" to="/Shartnoma">
                 Foydalanuv shartnomasi
               </Link>
             </p>
