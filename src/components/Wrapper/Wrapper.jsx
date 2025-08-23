@@ -149,19 +149,16 @@ function Wrapper() {
                 }}
                 PaperProps={{
                   style: {
-                    backgroundColor: isDarkMode ? '#2d328e' : 'white',
+                    backgroundColor: isDarkMode ? '#12121e' : 'white',
                     color: isDarkMode ? 'white' : 'black',
                   }
                 }}
               >
-                <MenuItem onClick={() => { handleThemeChange('dark'); handleClose(); }} className='text-[24px] flex items-center gap-2'>
-                  <Moon /> {t("Qorong'u")}
-                </MenuItem>
                 <MenuItem onClick={() => { handleThemeChange('light'); handleClose(); }} className='text-[24px] flex items-center gap-2'>
-                  <Sun /> {t("Yorug'")}
+                  <Sun /> {t("Light Mode")}
                 </MenuItem>
                 <MenuItem onClick={() => { handleThemeChange('system'); handleClose(); }} className='text-[24px] flex items-center gap-2'>
-                  <GrSystem /> {t("Tizimga bog'liq")}
+                  <Moon /> {t("Dark Mode")}
                 </MenuItem>
               </Menu>
             </div>
@@ -203,7 +200,7 @@ function Wrapper() {
 
     
         {toggleControl && (
-          <div className='md:hidden bg-white dark:bg-[#2d328e] p-4 space-y-4 shadow-lg rounded-lg mt-2 border border-gray-200 dark:border-gray-600'>
+          <div className='md:hidden bg-white dark:bg-[#12121e] p-4 space-y-4 shadow-lg rounded-lg mt-2 border border-gray-200 dark:border-gray-600'>
             <ul className="space-y-3">
               {['Afzal', 'ishlash', 'faq'].map((id, index) => (
                 <li key={index} className='py-2 border-b border-gray-100 dark:border-gray-600'>
@@ -222,20 +219,41 @@ function Wrapper() {
             </ul>
 
           
-            <div className="py-3">
-              <label htmlFor="theme-select-mobile" className="block mb-1 font-medium text-sm dark:text-white text-black">
-                Rejimni tanlang
-              </label>
-              <select
-                id="theme-select-mobile"
-                value={theme}
-                onChange={(e) => handleThemeChange(e.target.value)}
-                className="w-full p-2 rounded-md border border-gray-300 dark:border-gray-600 bg-white dark:bg-[#2d328e] text-black dark:text-white outline-none cursor-pointer"
+                <div>
+              <Button
+                id="basic-button"
+                aria-controls={open ? 'basic-menu' : undefined}
+                aria-haspopup="true"
+                aria-expanded={open ? 'true' : undefined}
+                onClick={handleClick}
+                className="text-black dark:text-white "
+              ><p className='text-black dark:text-white '>
+
+                Mode
+              </p>
+              </Button>
+              <Menu
+                id="basic-menu"
+                anchorEl={anchorEl}
+                open={open}
+                onClose={handleClose}
+                MenuListProps={{
+                  'aria-labelledby': 'basic-button',
+                }}
+                PaperProps={{
+                  style: {
+                    backgroundColor: isDarkMode ? '#12121e' : 'white',
+                    color: isDarkMode ? 'white' : 'black',
+                  }
+                }}
               >
-                <option value="light">Yorug' rejim</option>
-                <option value="dark">Qorong'u rejim</option>
-                <option value="system">Tizimga bog'liq</option>
-              </select>
+                <MenuItem onClick={() => { handleThemeChange('light'); handleClose(); }} className='text-[24px] flex items-center gap-2'>
+                  <Sun /> {t("Light Mode")}
+                </MenuItem>
+                <MenuItem onClick={() => { handleThemeChange('system'); handleClose(); }} className='text-[24px] flex items-center gap-2'>
+                  <Moon /> {t("Dark Mode")}
+                </MenuItem>
+              </Menu>
             </div>
 
           
@@ -246,7 +264,7 @@ function Wrapper() {
               <select
                 value={selectedLanguage}
                 onChange={handleLanguageChange}
-                className="w-full pl-10 pr-8 py-2 bg-transparent border-b-2 border-gray-300 dark:border-gray-400 uppercase outline-none text-black dark:text-white cursor-pointer"
+                className="w-full pl-10 pr-8 py-2 bg-transparent border-b-2 border-gray-300 dark:border-gray-400 uppercase outline-none text-black dark:text-white dark:bg-[#12121e] cursor-pointer"
               >
                 <option value="uzb">UZB</option>
                 <option value="rus">RUS</option>
@@ -256,9 +274,9 @@ function Wrapper() {
 
         
             <RouterLink to="/contact" className='block pt-4'>
-              <button onClick={() => setToggleControl(false)} className="w-full relative overflow-hidden px-5 py-3 font-bold rounded-full border-2 border-[#2d328e] dark:border-white bg-white dark:bg-[#2d328e] text-[#2d328e] dark:text-white hover:bg-[#2d328e] dark:hover:bg-white hover:text-white dark:hover:text-[#2d328e] transition-all duration-500 group whitespace-nowrap">
+              <button onClick={() => setToggleControl(false)} className="w-full relative overflow-hidden px-5 py-3 font-bold rounded-full border-2 border-[#12121e] dark:border-white bg-white dark:bg-[#12121e] text-[#12121e] dark:text-white hover:bg-[#12121e] dark:hover:bg-white hover:text-white dark:hover:text-[#12121e] transition-all duration-500 group whitespace-nowrap">
                 <span className="relative z-10">{t("Kuryer bo'lish")}</span>
-                <span className="absolute inset-0 bg-[#2d328e] dark:bg-white rounded-full scale-0 group-hover:scale-100 transition-transform duration-500 origin-center z-0"></span>
+                <span className="absolute inset-0 bg-[#12121e] dark:bg-white rounded-full scale-0 group-hover:scale-100 transition-transform duration-500 origin-center z-0"></span>
               </button>
             </RouterLink>
           </div>
