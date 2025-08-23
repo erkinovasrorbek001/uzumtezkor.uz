@@ -65,29 +65,7 @@ function Footer() {
             </p>
           </address>
 
-          <div className="write w-full md:w-[90%] lg:w-[80%] mt-8">
-            <p className="rite text-sm sm:text-base text-gray-500 dark:text-gray-300 text-left leading-relaxed">
-              <strong className="text-black dark:text-white">Aksiya "Salomlashuv bonusi"</strong> 17-dekabrdan 27-dekabrgacha Delgo
-              xizmatining hamkori bilan ishlayotgan kuryerlar uchun (keyingi o‘rinlarda — Xizmat),
-              avval Xizmat buyurtmalarini bajarmagan kuryerlar uchun o‘tkaziladi.
-              <br />
-              Aksiya shartlariga ko‘ra har bir kuryer faqat bitta bonus olishi mumkin: 300 000 (uch
-              yuz ming) yoki 1 000 000 (bir million) so‘m. Bonuslar qo‘shib hisoblanmaydi.
-              <br />
-              <br />
-              300 000 so‘mlik bonusni olish uchun quyidagi shartlarni bajarish kerak: Xizmat
-              buyurtmalaridan 80 tasini avtomobil foydalanib, Xizmatga ulanishdan boshlab 10 ta
-              kalendar kun ichida yetkazib berish.
-              <br />
-              1 000 000 so‘mlik bonusni olish uchun quyidagi shartlarni bajarish kerak: Xizmat
-              buyurtmalaridan 300 tasini avtomobil foydalanib, Xizmatga ulanishdan boshlab 30 ta
-              kalendar kun ichida yetkazib berish.
-              <br />
-              <br />
-              Aksiya faqat Toshkent shahrida amal qiladi. Bonus barcha shartlar bajarilganidan
-              keyin 5 ish kuni ichida to‘lanadi.
-            </p>
-          </div>
+          
         </nav>
       </div>
     </div>
