@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+  react-web:
+    image: tezkor-online-courier-react-web
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "2040:80"
+    restart: always
