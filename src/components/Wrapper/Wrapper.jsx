@@ -159,40 +159,10 @@ useEffect(() => {
 
           
                 <div>
-              <Button
-                id="basic-button"
-                aria-controls={open ? 'basic-menu' : undefined}
-                aria-haspopup="true"
-                aria-expanded={open ? 'true' : undefined}
-                onClick={handleClick}
-                className="text-black dark:text-white "
-              ><p className='text-black dark:text-white '>
-
-                Mode
-              </p>
-              </Button>
-              <Menu
-                id="basic-menu"
-                anchorEl={anchorEl}
-                open={open}
-                onClose={handleClose}
-                MenuListProps={{
-                  'aria-labelledby': 'basic-button',
-                }}
-                PaperProps={{
-                  style: {
-                    backgroundColor: isDarkMode ? '#12121e' : 'white',
-                    color: isDarkMode ? 'white' : 'black',
-                  }
-                }}
-              >
-                <MenuItem onClick={() => { handleThemeChange('light'); handleClose(); }} className='text-[24px] flex items-center gap-2'>
-                  <Sun /> {t("Light Mode")}
-                </MenuItem>
-                <MenuItem onClick={() => { handleThemeChange('system'); handleClose(); }} className='text-[24px] flex items-center gap-2'>
-                  <Moon /> {t("Dark Mode")}
-                </MenuItem>
-              </Menu>
+               <Switch
+              checked={isDarkMode}
+              onChange={(e) => setIsDarkMode(e.target.checked)}
+            />
             </div>
 
           
