@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 function Person() {
   const [t] = useTranslation()
   return (
-    <div data-aos='zoom-in' className="pt-30 Person bg-white  dark:bg-[#12121f] py-10 px-4 min-h-screen flex items-center justify-center">
+    <div  className="pt-30 Person bg-white  dark:bg-[#12121f] py-10 px-4 min-h-screen flex items-center justify-center">
       <div className="Person__container w-full max-w-[500px] bg-white dark:bg-[#12121f] shadow-md rounded-xl p-6">
        
         <div className="Person__logo flex justify-center mb-4">
