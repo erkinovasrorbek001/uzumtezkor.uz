@@ -5,8 +5,8 @@ import { HiMiniBars3BottomRight } from "react-icons/hi2";
 import { MdClose } from "react-icons/md";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Switch from '../../content/Switch';
 import { Moon, Sun, Globe } from "lucide-react";
-import { GrSystem } from "react-icons/gr";
 import Button from '@mui/material/Button';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
@@ -17,13 +17,32 @@ import './Wrapper.css';
 import { useTranslation } from 'react-i18next';
 import i18n from '../../content/i18';
 
+
 function Wrapper() {
   const [selectedLanguage, setSelectedLanguage] = useState('uzb');
   const [toggleControl, setToggleControl] = useState(false);
-  const [theme, setTheme] = useState('system');
-  const [isDarkMode, setIsDarkMode] = useState(false);
+
+ 
   const [anchorEl, setAnchorEl] = useState(null);
   const open = Boolean(anchorEl);
+  const [isDarkMode, setIsDarkMode] = useState(() => {
+    const storedTheme = localStorage.getItem('theme');
+    if (storedTheme === 'dark') return true;
+    if (storedTheme === 'light') return false;
+    return window.matchMedia('(prefers-color-scheme: dark)').matches;
+});
+
+useEffect(() => {
+    const root = document.documentElement;
+    if (isDarkMode) {
+      root.classList.add('dark');
+        localStorage.setItem('theme', 'dark');
+      } else {
+        root.classList.remove('dark');
+        localStorage.setItem('theme', 'light');
+      }
+    }, [isDarkMode]);
+  
 
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
@@ -31,63 +50,13 @@ function Wrapper() {
   const handleClose = () => {
     setAnchorEl(null);
   };
-
   useEffect(() => {
     AOS.init({ duration: 1000 });
-
-    const savedTheme = localStorage.getItem('theme');
-    if (['light', 'dark', 'system'].includes(savedTheme)) {
-      setTheme(savedTheme);
-    }
-
     const savedLang = localStorage.getItem('i18nextLng');
     if (savedLang) {
       setSelectedLanguage(savedLang);
     }
   }, []);
-
-  useEffect(() => {
-    const applyTheme = () => {
-      let isDark = false;
-
-      if (theme === 'dark') {
-        isDark = true;
-      } else if (theme === 'light') {
-        isDark = false;
-      } else {
-        isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-      }
-
-      setIsDarkMode(isDark);
-      if (isDark) {
-        document.documentElement.classList.add('dark');
-      } else {
-        document.documentElement.classList.remove('dark');
-      }
-    };
-
-    applyTheme();
-
-    if (theme === 'system') {
-      const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
-      const handler = (e) => {
-        setIsDarkMode(e.matches);
-        if (e.matches) {
-          document.documentElement.classList.add('dark');
-        } else {
-          document.documentElement.classList.remove('dark');
-        }
-      };
-      mediaQuery.addEventListener('change', handler);
-      return () => mediaQuery.removeEventListener('change', handler);
-    }
-  }, [theme]);
-
-  const handleThemeChange = (newTheme) => {
-    setTheme(newTheme);
-    localStorage.setItem('theme', newTheme);
-  };
-
   const handleLanguageChange = (event) => {
     const lang = event.target.value;
     setSelectedLanguage(lang);
@@ -127,40 +96,10 @@ function Wrapper() {
           <div className='hidden md:flex items-center gap-6 flex-shrink-0'>
        
             <div>
-              <Button
-                id="basic-button"
-                aria-controls={open ? 'basic-menu' : undefined}
-                aria-haspopup="true"
-                aria-expanded={open ? 'true' : undefined}
-                onClick={handleClick}
-                className="text-black dark:text-white "
-              ><p className='text-black dark:text-white '>
-
-                Mode
-              </p>
-              </Button>
-              <Menu
-                id="basic-menu"
-                anchorEl={anchorEl}
-                open={open}
-                onClose={handleClose}
-                MenuListProps={{
-                  'aria-labelledby': 'basic-button',
-                }}
-                PaperProps={{
-                  style: {
-                    backgroundColor: isDarkMode ? '#12121e' : 'white',
-                    color: isDarkMode ? 'white' : 'black',
-                  }
-                }}
-              >
-                <MenuItem onClick={() => { handleThemeChange('light'); handleClose(); }} className='text-[24px] flex items-center gap-2'>
-                  <Sun /> {t("Light Mode")}
-                </MenuItem>
-                <MenuItem onClick={() => { handleThemeChange('system'); handleClose(); }} className='text-[24px] flex items-center gap-2'>
-                  <Moon /> {t("Dark Mode")}
-                </MenuItem>
-              </Menu>
+             <Switch
+              checked={isDarkMode}
+              onChange={(e) => setIsDarkMode(e.target.checked)}
+            />
             </div>
 
          
