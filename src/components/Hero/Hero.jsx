@@ -16,8 +16,8 @@ function Hero() {
                             <p className='Hero__text text-[20px] ml-6'>{t("Har kuni ishlashingiz mumkin.")}</p>
                         </li>
                         <li data-aos='zoom-in-right' className='Hero__item border-1 dark:bg-[#12121f] shadow-md text-black dark:text-white px-5 py-6 w-[500px] mx-auto rounded-[30px] bg-[#fff] '>
-                            <h1 className='Hero_title text-[40px] text-wrap ml-7 font-medium '>{t("Barqaror va yuqori daromad.")}</h1>
-                            <p className='Hero__text text-[20px] w-[100%] ml-7'>{t("Buyurtmalarni o'z vaqtida va sifatli yetkazib bering va oyiga 2 bora, yuqori daromad oling.")}</p>
+                            <h1 className='Hero_title text-[40px] text-wrap  font-medium '>{t("Barqaror va yuqori daromad.")}</h1>
+                            <p className='Hero__text text-[20px] w-[90%]'>{t("Buyurtmalarni o'z vaqtida va sifatli yetkazib bering va oyiga 2 bora, yuqori daromad oling.")}</p>
                         </li>
                         <li data-aos='zoom-in-right' className='Hero__item border-1 dark:bg-[#12121f] shadow-md text-black dark:text-white px-3 py-7 w-[500px] mx-auto rounded-[30px] bg-[#fff]  '>
                             <h1 className='Hero_title text-[40px] text-wrap ml-2 font-medium'>{t("Ish tajribasi kerak emas.")}</h1>
