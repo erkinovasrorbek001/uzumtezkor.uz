@@ -16,22 +16,22 @@ function Hero() {
                             <p className='Hero__text text-[20px] ml-6'>{t("Har kuni ishlashingiz mumkin.")}</p>
                         </li>
                         <li data-aos='zoom-in-right' className='Hero__item border-1 dark:bg-[#12121f] shadow-md text-black dark:text-white px-5 py-6 w-[500px] mx-auto rounded-[30px] bg-[#fff] '>
-                            <h1 className='Hero_title text-[40px] text-wrap  font-medium '>{t("Barqaror va yuqori daromad.")}</h1>
-                            <p className='Hero__text text-[20px] w-[90%]'>{t("Buyurtmalarni o'z vaqtida va sifatli yetkazib bering va oyiga 2 bora, yuqori daromad oling.")}</p>
+                            <h1 className='Hero_title text-[40px] text-wrap ml-3 font-medium '>{t("Barqaror va yuqori daromad.")}</h1>
+                            <p className='Hero__text text-[20px] ml-2 w-[90%]'>{t("Buyurtmalarni o'z vaqtida va sifatli yetkazib bering va oyiga 2 bora, yuqori daromad oling.")}</p>
                         </li>
                         <li data-aos='zoom-in-right' className='Hero__item border-1 dark:bg-[#12121f] shadow-md text-black dark:text-white px-3 py-7 w-[500px] mx-auto rounded-[30px] bg-[#fff]  '>
                             <h1 className='Hero_title text-[40px] text-wrap ml-2 font-medium'>{t("Ish tajribasi kerak emas.")}</h1>
                             <p className='Hero__text text-[20px] w-[90%] ml-2'>{t("Tezkor ta'lim va buyurtmalar payti qo'llab-quvvatlash.")}</p>
                         </li>
                         <li data-aos='zoom-in' className='Hero__item border-1 dark:bg-[#12121f] shadow-md text-black dark:text-white px-5 py-6 w-[500px] mx-auto rounded-[30px] bg-[#fff]  '>
-                            <h1 className='Hero_title text-[40px] text-wrap ml-7 font-medium'>{t("Ozod ish jadvali.")}</h1>
-                            <p className='Hero__text text-[20px] w-[90%] ml-7'>{t("Siz ish kunlari va vaqtini o'zingiz tanlaysiz - 4 soatdan 12 soatgacha.")}</p>
+                            <h1 className='Hero_title text-[40px] text-wrap ml-2 font-medium'>{t("Ozod ish jadvali.")}</h1>
+                            <p className='Hero__text text-[20px] w-[90%] ml-2'>{t("Siz ish kunlari va vaqtini o'zingiz tanlaysiz - 4 soatdan 12 soatgacha.")}</p>
                         </li>
                         <li data-aos='zoom-in' className='Hero__item border-1 dark:bg-[#12121f] shadow-md text-black dark:text-white px-5 py-10 w-[500px] mx-auto rounded-[30px] bg-[#fff] '>
                             <h1 className='Hero_title text-[35px] text-wrap font-medium'>{t("O'qish yoki asosiy ish bilan birlashtirish oson")}</h1>
                         </li>
                         <li data-aos='zoom-in' className='Hero__item border-1 dark:bg-[#12121f] shadow-md  text-black dark:text-white px-5 py-6 w-[500px] mx-auto rounded-[30px] bg-[#fff] relative'>
-                            <h1 className='Hero_title text-[45px] ml-5 text-wrap font-medium'>
+                            <h1 className='Hero_title text-[45px] ml-2 text-wrap font-medium'>
                                 {t("Har qanday transport")}
                             </h1>
                             <p className='Hero__text text-[25px] ml-5'>{t("Buyurtmalarni velosipedda, mashinada, skuterda yoki samokatda yetkazishingiz mumkin.")}</p>
