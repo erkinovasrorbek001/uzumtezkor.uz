@@ -76,7 +76,7 @@ useEffect(() => {
           </RouterLink>
 
      
-          <ul className='hidden md:flex items-center gap-10 max-w-[600px] flex-shrink'>
+          <ul className='hidden md:flex items-center gap-10 max-[840px]:hidden max-w-[600px] flex-shrink'>
             {['Afzal', 'ishlash', 'faq'].map((id, index) => (
               <li key={index} className='Wrapper__item text-[18px] font-semibold whitespace-nowrap'>
                 <ScrollLink
@@ -93,7 +93,7 @@ useEffect(() => {
           </ul>
 
         
-          <div className='hidden md:flex items-center gap-6 flex-shrink-0'>
+          <div className='hidden max-[830px]:hidden md:flex items-center gap-6 flex-shrink-0'>
        
             <div>
              <Switch
@@ -105,7 +105,7 @@ useEffect(() => {
          
             <div className="relative group">
               <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none z-10">
-                <Globe className="h-4 w-4 text-gray-500 dark:text-gray-300" />
+                <Globe className="h-4 w-4 text-gray-500 max-[830px]:hidden dark:text-gray-300" />
               </div>
               <select
                 value={selectedLanguage}
