@@ -10,7 +10,7 @@ function Hero() {
                     <h1 className='Hero__title text-[70px] font-bold dark:text-white text-black max-sm:text-[40px] text-center'>{t("Afzalliklar")}</h1>
                     <ul className='Hero__lsit mt-10 flex flex-wrap px-2 justify-between gap-10 items-center '>
                         <li className='Hero__item px-2 w-[500px] py-20 max-[400px]:py-10  text-left border-1  mx-auto rounded-[30px] bg-[#fff] dark:bg-[#12121f] shadow-md text-black dark:text-white relative' data-aos='zoom-in-right'>
-                            <h1 className='Hero_title text-[40px] items-end text-wrap max-[400px]:text-[30px] font-medium ml-6'>
+                            <h1 className='Hero_title text-[40px]  items-end text-wrap max-[400px]:text-[30px] font-medium ml-6'>
                                {t("Doimiy ish faoliyati.")}
                             </h1>
                             <p className='Hero__text text-[24px] ml-6 mt-3 max-[400px]:text-[20px]'>{t("Har kuni ishlashingiz mumkin.")}</p>

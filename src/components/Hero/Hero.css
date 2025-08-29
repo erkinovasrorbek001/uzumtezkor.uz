@@ -12,6 +12,11 @@
     z-index: -10;
     width: 100%;
 }
-.Hero__title{
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Mozilla+Headline:wght@200..700&family=Noto+Sans+JP:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Unbounded:wght@200..900&display=swap');
+.Hero_title{
+    font-family:'Arimo'sans-serif;
+}
+.Hero__text{
+    font-family: 'arimo' ;
+    font-weight:100;
 }
