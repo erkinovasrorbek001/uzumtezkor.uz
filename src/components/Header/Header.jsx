@@ -31,11 +31,7 @@ function Header() {
       <span className='text-[#2b2170]'>{t("Delgo")}</span> <br  className='mt-5'/> {t("Hamisha birga bo'lamiz!")}
     </h1>
 
-    <button className='relative overflow-hidden px-5 py-4 text-[30px] font-bold rounded-full border-2 border-[#12121f] dark:border-white bg-white dark:bg-[#12121f] text-[#12121f] dark:text-white hover:bg-[#12121f] dark:hover:bg-white hover:text-white dark:hover:text-[#12121f] transition-all duration-1000 group
-      max-[1024px]:text-[26px]
-      max-[768px]:text-[22px]
-      max-[500px]:text-[18px]
-      max-[400px]:text-[16px] max-[400px]:py-3 max-[400px]:px-4'
+    <button className='relative overflow-hidden px-2 py-4 text-[30px] font-bold rounded-full border-2 border-[#12121f] dark:border-white bg-white dark:bg-[#12121f] text-[#12121f] dark:text-white hover:bg-[#12121f] dark:hover:bg-white hover:text-white dark:hover:text-[#12121f] transition-all duration-1000 group'
     >
       <span className='relative z-10'>{t("Kuryer bo'lish")}</span>
       <span className='absolute inset-0 bg-[#12121f] dark:bg-white rounded-full scale-0 group-hover:scale-100 transition-transform duration-1000 origin-center z-0'></span>
